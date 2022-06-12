@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Test Suite">
+    <parameter name="BROWSER_NAME" value="chrome"></parameter>
+    <test name="Test package">
+        <parameter name="BROWSER_NAME" value="firefox"></parameter>
+        <parameter name="URL" value="www.gmail.com"></parameter>
+        <parameter name="Runmode" value="Run mode  is yes"></parameter>
+    <packages>
+        <package name="TestPackage2"/>
+
+
+    </packages>
+    </test>
+</suite>
+
+        <!--Your comment-->
+

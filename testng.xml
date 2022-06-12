@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Test Suite">
+    <listeners>
+        <!--
+                <listener class-name="Listeners.Listeners"></listener>
+        -->
+        <listener class-name="Listeners.Listeners"></listener>
+        <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"></listener>
+
+    </listeners>
+    <test name="Test1">
+  
+                <parameter name="BROWSER_NAME" value="chrome"/>
+
+        <classes>
+            <class name="TestScripts.LoginTest"></class>
+
+            <class name="TestScripts.MobileSectionTest"></class>
+        </classes>
+    </test>
+    <!--    <test name="Test 2">
+            <parameter name="BROWSER_NAME" value="firefox"></parameter>
+            <parameter name="URL" value="www.gmail.com"></parameter>
+            <parameter name="Runmode" value="Run mode  is yes"></parameter>
+            <groups>
+
+                <run>
+                    <exclude name="smoke"/>
+                </run>
+            </groups>
+            <classes>
+                <class name="TestScripts.TestExclude"></class>-->
+</suite>
+

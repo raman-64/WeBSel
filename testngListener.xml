@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Test Suite"    >
+    <listeners>
+
+        <listener class-name="Listeners.Listeners"></listener>
+
+
+        <listener class-name="com.qa.ExtentReportListener.ExtentReporter"></listener>
+
+    </listeners>
+    <test name="Test1" parallel="classes" thread-count="2">
+        <parameter name="BROWSER_NAME" value="chrome"></parameter>
+        <parameter name="URL" value="www.gmail.com"></parameter>
+
+        <parameter name="Runmode" value="Run mode  is yes"></parameter>
+        <classes>
+            <class name="TestScripts.LoginTest"></class>
+            <class name="TestScripts.MobileSectionTest"></class>
+            <!--
+                        <class name="TestPackage2.TestExclude1"></class>
+                        <class name="TestScripts.TestExclude"></class>-->
+        </classes>
+    </test>
+</suite>
